@@ -1,0 +1,184 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+    
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #b18f09;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de inicio */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    color: #b18f09;
+    font-size: 2.5em;
+}
+
+/* Sección de industrias */
+/* Estilo del slider */
+.industries-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño según tus necesidades */
+    margin: 0 auto;
+}
+
+.industries-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* Contenedor del slide con fondo */
+.industry {
+    position: relative;
+    min-width: 100%;
+    flex: 0 0 100%;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según prefieras */
+    overflow: hidden;
+}
+
+/* Superposición semitransparente */
+.industry::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+    z-index: 1; /* Coloca la capa detrás del texto */
+}
+
+/* Estilo del texto para que esté encima de la superposición */
+.industry h3, .industry p {
+    position: relative;
+    z-index: 2; /* Coloca el texto encima de la superposición */
+    margin: 0;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Sección de servicios */
+.services-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 150px;
+    text-align: center;
+}
+
+.service img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+
+}
+
+/* Formulario */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b18f09;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+form button {
+    background-color: #b18f09;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+.nosotros {
+    text-align: center;
+}

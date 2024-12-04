@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #1f1f1f, #000000);
+}
+
+.hero h1 {
+    color: #f1c40f;
+    font-size: 2.5em;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.industry {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f1c40f;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+form button {
+    background-color: #f1c40f;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
